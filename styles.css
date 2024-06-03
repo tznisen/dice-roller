@@ -1,24 +1,37 @@
 .container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  #dice {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
 
-  #rollBtn {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #rollBtn:hover {
-    background-color: darkgreen;
-  }
-  
+#dice {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 60px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#rollBtn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Added margin to create space between dice and button */
+}
+
+#rollBtn:hover {
+  background-color: darkblue;
+}
+
+#dice::before {
+  font-size: 24px;
+  line-height: 50px;
+}
