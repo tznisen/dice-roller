@@ -24,7 +24,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; /* Added margin to create space between dice and button */
+  margin-top: 20px;
 }
 
 #rollBtn:hover {
@@ -34,4 +34,17 @@
 #dice::before {
   font-size: 24px;
   line-height: 50px;
+}
+
+.rotateAnimation {
+  animation: rotateDice 0.5s ease-in-out;
+}
+
+@keyframes rotateDice {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
